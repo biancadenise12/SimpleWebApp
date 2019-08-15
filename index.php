@@ -17,7 +17,11 @@ try {
 }
 
 if($conn->connect_error){
-    echo 'connection failed' . $conn->connect_error;
+	    echo 'connection failed' . $conn->connect_error;
 }
 else echo 'Successfully connected to MYSQL';
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 60b06fd581ee66a8fb69c86770fe6fca53de7add
