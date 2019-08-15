@@ -1,9 +1,9 @@
 <?php
 
-$servername = "mysqlserver";
+$servername = "mysql";
 $user = "root";
 $password = "root";
-$dbname = "appserver/DXCdb";
+$dbname = "DXCdb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
