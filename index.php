@@ -1,15 +1,14 @@
 <?php
+$host = 'containerid';
+$user = 'user';
+$password = 'pass';
+$db = 'dxc';
 
-$servername = "localhost";
-$user = "root";
-$password = "root";
-$dbname = "DXCdb";
+$conn = new mysqli($host,$user,$password,$db);
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+if($conn->connect_error){
+    echo 'connection failed' . $conn->connect_error;
+}
 
+echo 'Successfully connected to MYSQL';
 ?>
