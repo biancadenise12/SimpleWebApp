@@ -1,23 +1,23 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+$servername = "7962b6d240e3";
+$username = "user";
+$password = "pass";
+$dbname = "dxc";
 
-$host = '7962b6d240e3';
-$db   = 'dxc';
-$user = 'user';
-$pass = 'pass';
-$charset = 'utf8mb4';
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$sql = "INSERT INTO users(firstname,lastname) VALUES('Denise','Del');";
 
-try {
-    $conn=new PDO($dsn,$user,$pass);
-} catch (PDOException $e) {
-    $cover = $e->getMessage(); 
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-if($conn->connect_error){
-    echo 'connection failed' . $conn->connect_error;
-}
-else echo 'Successfully connected to MYSQL';
+$conn->close();
 ?>
