@@ -3,7 +3,7 @@
 $servername = "mysqlserver";
 $user = "root";
 $password = "root";
-$dbname = "DXCdb";
+$dbname = "appserver/DXCdb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
