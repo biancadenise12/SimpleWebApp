@@ -1,6 +1,6 @@
 <?php
 
-$servername = "172.17.0.2";
+$servername = "mysqlserver";
 $user = "root";
 $password = "root";
 $dbname = "DXCdb";
