@@ -1,6 +1,6 @@
 <?php
 
-$servername = "mysql";
+$servername = "localhost";
 $user = "root";
 $password = "root";
 $dbname = "DXCdb";
