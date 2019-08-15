@@ -1,5 +1,5 @@
 <?php
-$host = 'containerid';
+$host = '7962b6d240e3';
 $user = 'user';
 $password = 'pass';
 $db = 'dxc';
